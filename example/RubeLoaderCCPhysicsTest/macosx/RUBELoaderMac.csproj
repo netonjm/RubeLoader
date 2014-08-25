@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C976AEE3-940E-4658-BCDD-80A581E4C696}</ProjectGuid>
+    <ProjectTypeGuids>{42C0BBD9-55CE-4FC1-8D90-A7348ABAFB23};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RubePlatformTest</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>CocosSharpSpine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <StartupObject>RubePlatformTest.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+    <StartupObject>PCLTest.Program</StartupObject>
+    <PackageSigningKey>Developer ID Installer</PackageSigningKey>
+    <I18n>
+    </I18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <CreatePackage>true</CreatePackage>
+    <StartupObject>PCLTest.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <CreatePackage>true</CreatePackage>
+    <CodeSigningKey>3rd Party Mac Developer Application</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
+    <StartupObject>PCLTest.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="XamMac" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="..\win32\AppDelegate.cs">
+      <Link>AppDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\src\IntroLayer.cs">
+      <Link>IntroLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\src\Player.cs">
+      <Link>Player.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CCDelayTimeEx\src\CCDelayTimeEx.cs">
+      <Link>CCDelayTimeEx\src\CCDelayTimeEx.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Content\pong\" />
+    <Folder Include="CCDelayTimeEx\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RubeLoader\win32\RubeLoader.csproj">
+      <Project>{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}</Project>
+      <Name>RubeLoader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Content\win32\fonts\MarkerFelt-22.xnb">
+      <Link>Content\fonts\MarkerFelt-22.xnb</Link>
+    </Content>
+    <Content Include="..\Content\win32\fonts\arial-16.xnb">
+      <Link>Content\fonts\arial-16.xnb</Link>
+    </Content>
+    <Content Include="..\Content\win32\poring-hd.plist">
+      <Link>Content\poring-hd.plist</Link>
+    </Content>
+    <Content Include="..\Content\win32\poring.plist">
+      <Link>Content\poring.plist</Link>
+    </Content>
+    <Content Include="..\Content\win32\wheelshadow.bmp">
+      <Link>Content\wheelshadow.bmp</Link>
+    </Content>
+    <Content Include="..\Content\win32\bike.json">
+      <Link>Content\bike.json</Link>
+    </Content>
+    <Content Include="..\Content\win32\bikebody.png">
+      <Link>Content\bikebody.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\bikefrontwheel.png">
+      <Link>Content\bikefrontwheel.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\bikerearwheel.png">
+      <Link>Content\bikerearwheel.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\bikeswingarm.png">
+      <Link>Content\bikeswingarm.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\carbody.png">
+      <Link>Content\carbody.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\carwheel.png">
+      <Link>Content\carwheel.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\crate.png">
+      <Link>Content\crate.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\mariotest.json">
+      <Link>Content\mariotest.json</Link>
+    </Content>
+    <Content Include="..\Content\win32\poring-hd.png">
+      <Link>Content\poring-hd.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\poring.png">
+      <Link>Content\poring.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\tank.json">
+      <Link>Content\tank.json</Link>
+    </Content>
+    <Content Include="..\Content\win32\tire.png">
+      <Link>Content\tire.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\truck.json">
+      <Link>Content\truck.json</Link>
+    </Content>
+    <Content Include="..\Content\win32\truck.png">
+      <Link>Content\truck.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\walk1.png">
+      <Link>Content\walk1.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\walker.json">
+      <Link>Content\walker.json</Link>
+    </Content>
+    <Content Include="..\Content\win32\wallpaper.png">
+      <Link>Content\wallpaper.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\pong\HD\poring.plist">
+      <Link>Content\pong\HD\poring.plist</Link>
+    </Content>
+    <Content Include="..\Content\win32\pong\HD\poring.png">
+      <Link>Content\pong\HD\poring.png</Link>
+    </Content>
+    <Content Include="..\Content\win32\pong\SD\poring.plist">
+      <Link>Content\pong\SD\poring.plist</Link>
+    </Content>
+    <Content Include="..\Content\win32\pong\SD\poring.png">
+      <Link>Content\pong\SD\poring.png</Link>
+    </Content>
+  </ItemGroup>
+</Project>
