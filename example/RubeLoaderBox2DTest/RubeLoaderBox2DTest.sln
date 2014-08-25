@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubeLoaderBox2dTest", "win32\RubeLoaderBox2dTest.csproj", "{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubeLoader", "..\..\src\RubeLoader\win32\RubeLoader.csproj", "{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		DebugPhysics|Any CPU = DebugPhysics|Any CPU
+		DebugPhysics|ARM = DebugPhysics|ARM
+		DebugPhysics|Mixed Platforms = DebugPhysics|Mixed Platforms
+		DebugPhysics|x86 = DebugPhysics|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		ReleasePhysics|Any CPU = ReleasePhysics|Any CPU
+		ReleasePhysics|ARM = ReleasePhysics|ARM
+		ReleasePhysics|Mixed Platforms = ReleasePhysics|Mixed Platforms
+		ReleasePhysics|x86 = ReleasePhysics|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|ARM.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|x86.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Debug|x86.Build.0 = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|Any CPU.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|ARM.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|Mixed Platforms.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|Mixed Platforms.Build.0 = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|x86.ActiveCfg = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.DebugPhysics|x86.Build.0 = Debug|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|Any CPU.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|ARM.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|x86.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.Release|x86.Build.0 = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|Any CPU.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|ARM.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|Mixed Platforms.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|Mixed Platforms.Build.0 = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|x86.ActiveCfg = Release|x86
+		{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}.ReleasePhysics|x86.Build.0 = Release|x86
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|Any CPU.Build.0 = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|ARM.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.DebugPhysics|x86.ActiveCfg = Debug|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.Release|x86.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|Any CPU.Build.0 = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|ARM.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|Mixed Platforms.Build.0 = Release|Any CPU
+		{A8FC0ECA-C1A5-4B50-967E-13F04F07EF1B}.ReleasePhysics|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

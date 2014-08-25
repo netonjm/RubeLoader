@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">ARM</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72778D87-238A-4F25-AD7F-10098E8377EB}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RubeLoaderTest.WP8</RootNamespace>
+    <AssemblyName>RubeLoaderTest.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>EmptyProject_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>RubeLoaderTest.WP8.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <NuGetPackageImportStamp>cc2cc278</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsPhone8\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsPhone8\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsPhone8\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsPhone8\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\CocosSharp\Extensions\Box2D\CCDraw.cs">
+      <Link>RubeLoader\rube-box2d\CCDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CCDelayTimeEx\src\CCDelayTimeEx.cs">
+      <Link>Helpers\CCDelayTimeEx.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Helpers\src\CCMathExHelper.cs">
+      <Link>Helpers\CCMathExHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Helpers\src\CCPointExHelper.cs">
+      <Link>Helpers\CCPointExHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Helpers\src\PathHelper.cs">
+      <Link>Helpers\PathHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-box2d\Box2dDebugDraw.cs">
+      <Link>RubeLoader\rube-box2d\Box2dDebugDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-box2d\QueryCallback.cs">
+      <Link>RubeLoader\rube-box2d\QueryCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-box2d\Settings.cs">
+      <Link>RubeLoader\rube-box2d\Settings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-loader\MouseTouch.cs">
+      <Link>RubeLoader\rube-loader\MouseTouch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-loader\PinchZoom.cs">
+      <Link>RubeLoader\rube-loader\PinchZoom.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-loader\PlanetCuteRubeLayer.cs">
+      <Link>RubeLoader\rube-loader\PlanetCuteRubeLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-loader\RubeBasicLayer.cs">
+      <Link>RubeLoader\rube-loader\RubeBasicLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-loader\RubeLayer.cs">
+      <Link>RubeLoader\rube-loader\RubeLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-nb2djson\Nb2dJson.cs">
+      <Link>RubeLoader\rube-nb2djson\Nb2dJson.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\rubeloader\common\rube-nb2djson\Nb2dJsonImage.cs">
+      <Link>RubeLoader\rube-nb2djson\Nb2dJsonImage.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\src\IntroLayer.cs">
+      <Link>IntroLayer.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="..\Content\wp8\bike.json">
+      <Link>Content\bike.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\bikebody.xnb">
+      <Link>Content\bikebody.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\bikefrontwheel.xnb">
+      <Link>Content\bikefrontwheel.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\bikerearwheel.xnb">
+      <Link>Content\bikerearwheel.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\bikeswingarm.xnb">
+      <Link>Content\bikeswingarm.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\carbody.xnb">
+      <Link>Content\carbody.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\carwheel.xnb">
+      <Link>Content\carwheel.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\crate.xnb">
+      <Link>Content\crate.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\fonts\arial-16.xnb">
+      <Link>Content\fonts\arial-16.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\fonts\MarkerFelt-22.xnb">
+      <Link>Content\fonts\MarkerFelt-22.xnb</Link>
+    </Content>
+    <None Include="..\Content\wp8\mariotest.json">
+      <Link>Content\mariotest.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Content\wp8\poring-hd.plist">
+      <Link>Content\poring-hd.plist</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\poring-hd.xnb">
+      <Link>Content\poring-hd.xnb</Link>
+    </Content>
+    <None Include="..\Content\wp8\poring.plist">
+      <Link>Content\poring.plist</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\poring.xnb">
+      <Link>Content\poring.xnb</Link>
+    </Content>
+    <None Include="..\Content\wp8\tank.json">
+      <Link>Content\tank.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\tire.xnb">
+      <Link>Content\tire.xnb</Link>
+    </Content>
+    <None Include="..\Content\wp8\truck.json">
+      <Link>Content\truck.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\walk1.xnb">
+      <Link>Content\walk1.xnb</Link>
+    </Content>
+    <None Include="..\Content\wp8\walker.json">
+      <Link>Content\walker.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="..\Content\wp8\wallpaper.xnb">
+      <Link>Content\wallpaper.xnb</Link>
+    </Content>
+    <Content Include="..\Content\wp8\wheelshadow.xnb">
+      <Link>Content\wheelshadow.xnb</Link>
+    </Content>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <Target Name="MonoGame_RemoveXnaAssemblies" AfterTargets="ImplicitlyExpandTargetFramework">
+    <Message Text="MonoGame - Removing XNA Assembly references!" Importance="normal" />
+    <ItemGroup>
+      <ReferencePath Remove="@(ReferencePath)" Condition="'%(Filename)%(Extension)'=='Microsoft.Xna.Framework.dll'" />
+      <ReferencePath Remove="@(ReferencePath)" Condition="'%(Filename)%(Extension)'=='Microsoft.Xna.Framework.GamerServices.dll'" />
+      <ReferencePath Remove="@(ReferencePath)" Condition="'%(Filename)%(Extension)'=='Microsoft.Xna.Framework.GamerServicesExtensions.dll'" />
+      <ReferencePath Remove="@(ReferencePath)" Condition="'%(Filename)%(Extension)'=='Microsoft.Xna.Framework.Input.Touch.dll'" />
+      <ReferencePath Remove="@(ReferencePath)" Condition="'%(Filename)%(Extension)'=='Microsoft.Xna.Framework.MediaLibraryExtensions.dll'" />
+    </ItemGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
